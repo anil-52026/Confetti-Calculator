@@ -168,8 +168,8 @@ const Calculator = () => {
   };
 
   return (
-    <div className={`min-h-screen ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'}`}>
-      <div className="flex items-center justify-center min-h-screen">
+    <div className="h-screen w-screen flex justify-center items-center bg-gray-100 ">
+      <div className={`bg-gray-100 p-8 rounded-lg shadow-lg max-w-2xl mx-auto h-full ${theme === 'dark'? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'}`}>
         <button onClick={toggleTheme} className="absolute top-1 right-4 p-2 rounded-full bg-gray-800">{theme === 'light' ? '🌙' : '☀️'}</button>
         {confetti && (
           <Suspense fallback={<div>Loading...</div>}>
